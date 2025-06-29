@@ -50,5 +50,15 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ApiError> handleGenericException(Exception ex) {
+        ApiError error = new ApiError();
+        error.setType("https://onlinebanking.com/probs/technical-error");
+        error.setTitle("Generic Error");
+        error.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
+        error.setDetail("An unexpected error occurred, please try again later.");
+        return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
 
 }

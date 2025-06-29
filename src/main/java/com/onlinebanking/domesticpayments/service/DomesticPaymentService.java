@@ -3,20 +3,20 @@ package com.onlinebanking.domesticpayments.service;
 import com.onlinebanking.domesticpayments.dto.DomesticPaymentRequest;
 import com.onlinebanking.domesticpayments.model.DomesticPayment;
 import com.onlinebanking.domesticpayments.repository.DomesticPaymentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
 
 @Service
 public class DomesticPaymentService {
 
-    @Autowired
-    private DomesticPaymentRepository repository;
+    private final DomesticPaymentRepository repository;
+
+    public DomesticPaymentService(DomesticPaymentRepository repository) {
+        this.repository = repository;
+    }
 
     public DomesticPayment savePayment(DomesticPaymentRequest request) {
         DomesticPayment payment = new DomesticPayment();
-       // payment.setPaymentReferenceID(UUID.randomUUID().toString());
         payment.setBeneficiaryId(request.getBeneficiaryId());
         payment.setPaymentAmount(request.getPaymentAmount());
         payment.setPaymentType(request.getPaymentType());

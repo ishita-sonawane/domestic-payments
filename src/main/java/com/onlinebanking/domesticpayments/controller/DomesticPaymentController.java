@@ -6,29 +6,34 @@ import com.onlinebanking.domesticpayments.error.InsufficientBalanceException;
 import com.onlinebanking.domesticpayments.error.IncorrectBeneficiaryDetailsException;
 import com.onlinebanking.domesticpayments.model.DomesticPayment;
 import com.onlinebanking.domesticpayments.service.DomesticPaymentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @RestController
 @RequestMapping("/api/domestic-payments")
 public class DomesticPaymentController {
 
-    @Autowired
-    private DomesticPaymentService paymentService;
+    private static final Logger logger = LoggerFactory.getLogger(DomesticPaymentController.class);
+
+    private final DomesticPaymentService paymentService;
+
+    public DomesticPaymentController(DomesticPaymentService paymentService) {
+        this.paymentService = paymentService;
+    }
 
     @PostMapping
     public ResponseEntity<DomesticPaymentResponse> createPayment(@RequestBody DomesticPaymentRequest request) {
-        System.out.println("Received payment request: " + request);
-
+        logger.info("Received payment request: {}", request);
         // Check for sufficient balance
         if (request.getPaymentAmount() != null && request.getPaymentAmount().doubleValue() > 10000) {
             throw new InsufficientBalanceException("Insufficient balance for this transaction.");
         }
 
         // Validate beneficiary details
-        if (request.getPayeeAccountNumber() == null || request.getPayeeAccountNumber().isEmpty()) {
-            throw new IncorrectBeneficiaryDetailsException("Beneficiary account number is required.");
+        if (request.getBeneficiaryId() == null || request.getBeneficiaryId().length() != 8 || !request.getBeneficiaryId().matches("\\d{8}")) {
+            throw new IncorrectBeneficiaryDetailsException("Beneficiary account number is required or not in proper format.");
         }
 
         // Persist payment using service
