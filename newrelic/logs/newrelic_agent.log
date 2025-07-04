@@ -1,0 +1,30 @@
+2025-07-04T18:44:36,862+0530 [8364 1] com.newrelic INFO: Writing to New Relic log file: D:\workspaces\intellij\internship\domestic-payments\newrelic\logs\newrelic_agent.log
+2025-07-04T18:44:36,862+0530 [8364 1] com.newrelic INFO: JRE vendor Oracle Corporation version 20.0.1
+2025-07-04T18:44:36,865+0530 [8364 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 20.0.1+9-29
+2025-07-04T18:44:36,865+0530 [8364 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2025-07-04T18:44:36,865+0530 [8364 1] com.newrelic INFO: Agent Host: LAPTOP-KE7PJ2ND IP: 192.168.1.4
+2025-07-04T18:44:36,865+0530 [8364 1] com.newrelic INFO: New Relic Agent v8.21.0 is initializing...
+2025-07-04T18:44:37,755+0530 [8364 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-07-04T18:44:39,075+0530 [8364 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-07-04T18:44:39,418+0530 [8364 1] com.newrelic INFO: Setting audit_mode to false
+2025-07-04T18:44:39,618+0530 [8364 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\workspaces\intellij\internship\domestic-payments\newrelic\.\newrelic.yml
+2025-07-04T18:44:39,625+0530 [8364 1] com.newrelic INFO: New Relic Agent v8.21.0 has started
+2025-07-04T18:44:39,625+0530 [8364 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@67117f44
+2025-07-04T18:44:39,625+0530 [8364 1] com.newrelic INFO: Premain startup complete in 3,935ms
+2025-07-04T18:44:39,626+0530 [8364 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-07-04T18:44:43,701+0530 [8364 69] com.newrelic INFO: Server Info: Apache Tomcat/10.1.42
+2025-07-04T18:44:54,650+0530 [8364 56] com.newrelic INFO: Host name is LAPTOP-KE7PJ2ND, display host LAPTOP-KE7PJ2ND for application domestic-payments
+2025-07-04T18:44:54,652+0530 [8364 56] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-07-04T18:44:56,762+0530 [8364 56] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-07-04T18:44:58,314+0530 [8364 56] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2025-07-04T18:44:58,314+0530 [8364 56] com.newrelic INFO: Agent run id: BeauwXaAvs72AGjUmkgPugxoZ9RMAAIBAAAnIQEAACCsAgRID7YeAwAGOC4yMS4wAA9MQVBUT1AtS0U3UEoyTkQAEWRvbWVzdGljLXBheW1lbnRz
+2025-07-04T18:44:58,314+0530 [8364 56] com.newrelic INFO: Agent 8364@LAPTOP-KE7PJ2ND/domestic-payments connected to collector.newrelic.com:443
+2025-07-04T18:44:58,320+0530 [8364 56] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6870170/applications/1208989214
+2025-07-04T18:44:58,323+0530 [8364 56] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-07-04T18:44:58,323+0530 [8364 56] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-07-04T18:44:58,323+0530 [8364 56] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-07-04T18:44:58,328+0530 [8364 56] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-07-04T18:44:58,329+0530 [8364 56] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-07-04T18:44:58,329+0530 [8364 56] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-07-04T18:44:59,069+0530 [8364 56] com.newrelic INFO: Real user monitoring is enabled for application domestic-payments. Auto instrumentation is enabled.
+2025-07-04T18:44:59,069+0530 [8364 56] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.

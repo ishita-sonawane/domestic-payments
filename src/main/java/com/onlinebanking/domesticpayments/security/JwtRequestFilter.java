@@ -6,6 +6,7 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -22,7 +23,11 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Base64;
+import java.util.List;
+import java.util.Map;
+
 /*
 Intercepts incoming requests
 Validates JWT tokens with an external service (hosted on AWS
@@ -40,6 +45,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     private final JwtUtil jwtUtil;
     //RestTemplate for making HTTP requests to the JWT validation API
     private final RestTemplate restTemplate;
+
     //constructor
     public JwtRequestFilter(JwtUtil jwtUtil, RestTemplate restTemplate) {
         this.jwtUtil = jwtUtil;
@@ -52,7 +58,9 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
-        System.out.println("JwtRequestFilter: doFilterInternal called");
+        Logger logger = org.slf4j.LoggerFactory.getLogger(JwtRequestFilter.class);
+        logger.info("JwtRequestFilter: doFilterInternal called");
+        //System.out.println("JwtRequestFilter: doFilterInternal called");
         // Check for Authorization header and extract JWT token
         final String authHeader = request.getHeader("Authorization");
 
