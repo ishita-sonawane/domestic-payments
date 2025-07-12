@@ -97,24 +97,6 @@
         </dependency>
 
 
-        <!-- Log4j2 dependencies -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-starter-log4j2</artifactId>-->
-        <!--        </dependency>-->
-
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.logging.log4j</groupId>-->
-        <!--            <artifactId>log4j-slf4j-impl</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.logging.log4j</groupId>-->
-        <!--            <artifactId>log4j-core</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.logging.log4j</groupId>-->
-        <!--            <artifactId>log4j-api</artifactId>-->
-        <!--        </dependency>-->
 
     </dependencies>
 
@@ -137,8 +119,7 @@
                         <configuration>
                             <includeGroupIds>com.newrelic.agent.java</includeGroupIds>
                             <includeArtifactIds>newrelic-java</includeArtifactIds>
-                            <!-- you can optionally exclude files -->
-                            <!-- <excludes>**/newrelic.yml</excludes> -->
+
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>false</overWriteSnapshots>
                             <overWriteIfNewer>true</overWriteIfNewer>

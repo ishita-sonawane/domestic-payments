@@ -8,13 +8,11 @@ import com.onlinebanking.domesticpayments.model.DomesticPayment;
 import com.onlinebanking.domesticpayments.service.DomesticPaymentService;
 import org.slf4j.Logger;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/domestic-payments")
+@CrossOrigin(origins = "http://localhost:3000")
 public class DomesticPaymentController {
 
     Logger logger = org.slf4j.LoggerFactory.getLogger(DomesticPaymentController.class);
