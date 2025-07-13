@@ -21,6 +21,7 @@ public class DomesticPaymentService {
     public DomesticPayment savePayment(DomesticPaymentRequest request) {
         logger.info("DomesticPaymentService: savePayment called");
         DomesticPayment payment = new DomesticPayment();
+        payment.setPaymentReference(request.getPaymentReference());
         payment.setBeneficiaryId(request.getBeneficiaryId());
         payment.setPaymentAmount(request.getPaymentAmount());
         payment.setPaymentType(request.getPaymentType());

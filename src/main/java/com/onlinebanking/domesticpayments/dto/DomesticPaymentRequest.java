@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 
 public class DomesticPaymentRequest {
     private String paymentReferenceId;
+    private String paymentReference;
     private String beneficiaryId;
     private BigDecimal paymentAmount;
     private String customerId;
@@ -112,5 +113,13 @@ public class DomesticPaymentRequest {
 
     public void setRecurringPaymentNumber(Integer recurringPaymentNumber) {
         this.recurringPaymentNumber = recurringPaymentNumber;
+    }
+
+    public String getPaymentReference() {
+        return paymentReference;
+    }
+
+    public void setPaymentReference(String paymentReference) {
+        this.paymentReference = paymentReference;
     }
 }

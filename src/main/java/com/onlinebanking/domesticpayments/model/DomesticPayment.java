@@ -1,10 +1,10 @@
 package com.onlinebanking.domesticpayments.model;
 
 import jakarta.persistence.*;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import jakarta.validation.constraints.Pattern;
 
 @Entity
 @Table(name = "domestic_payments", schema = "online_banking")
@@ -164,6 +164,18 @@ public class DomesticPayment {
 
     @Column(name = "recurring_payment_number")
     private Integer recurringPaymentNumber;
+
+    @Column(name = "payment_reference")
+    @Pattern(regexp = "[a-zA-Z0-9]{1,30}", message = "Only letters and digits allowed (max 30 characters)")
+    private String paymentReference;
+
+    public @Pattern(regexp = "[a-zA-Z0-9]{1,30}", message = "Only letters and digits allowed (max 30 characters)") String getPaymentReference() {
+        return paymentReference;
+    }
+
+    public void setPaymentReference(@Pattern(regexp = "[a-zA-Z0-9]{1,30}", message = "Only letters and digits allowed (max 30 characters)") String paymentReference) {
+        this.paymentReference = paymentReference;
+    }
 
     // Getters and setters for all fields
     // ...

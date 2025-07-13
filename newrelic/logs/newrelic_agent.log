@@ -318,3 +318,64 @@
 2025-07-11T11:25:00,042+0530 [19316 56] com.newrelic INFO: Real user monitoring is enabled for application domestic-payments. Auto instrumentation is enabled.
 2025-07-11T11:25:00,042+0530 [19316 56] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
 2025-07-11T12:21:47,642+0530 [19316 30] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2025-07-12T16:17:06,024+0530 [4472 1] com.newrelic INFO: Writing to New Relic log file: D:\workspaces\intellij\internship\domestic-payments\newrelic\logs\newrelic_agent.log
+2025-07-12T16:17:06,024+0530 [4472 1] com.newrelic INFO: JRE vendor Oracle Corporation version 20.0.1
+2025-07-12T16:17:06,024+0530 [4472 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 20.0.1+9-29
+2025-07-12T16:17:06,024+0530 [4472 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2025-07-12T16:17:06,024+0530 [4472 1] com.newrelic INFO: Agent Host: LAPTOP-KE7PJ2ND IP: 192.168.1.4
+2025-07-12T16:17:06,024+0530 [4472 1] com.newrelic INFO: New Relic Agent v8.21.0 is initializing...
+2025-07-12T16:17:06,774+0530 [4472 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-07-12T16:17:07,927+0530 [4472 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-07-12T16:17:08,250+0530 [4472 1] com.newrelic INFO: Setting audit_mode to false
+2025-07-12T16:17:08,422+0530 [4472 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\workspaces\intellij\internship\domestic-payments\newrelic\.\newrelic.yml
+2025-07-12T16:17:08,423+0530 [4472 1] com.newrelic INFO: New Relic Agent v8.21.0 has started
+2025-07-12T16:17:08,423+0530 [4472 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@67117f44
+2025-07-12T16:17:08,423+0530 [4472 1] com.newrelic INFO: Premain startup complete in 3,422ms
+2025-07-12T16:17:08,429+0530 [4472 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-07-12T16:17:12,664+0530 [4472 69] com.newrelic INFO: Server Info: Apache Tomcat/10.1.42
+2025-07-12T16:17:23,443+0530 [4472 56] com.newrelic INFO: Host name is LAPTOP-KE7PJ2ND, display host LAPTOP-KE7PJ2ND for application domestic-payments
+2025-07-12T16:17:23,443+0530 [4472 56] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-07-12T16:17:24,922+0530 [4472 56] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-07-12T16:17:26,151+0530 [4472 56] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2025-07-12T16:17:26,151+0530 [4472 56] com.newrelic INFO: Agent run id: BX9jlOuOcVt2AGjUmkgPugxocj2cAAIBAAAnIQEAABF4AgRID7YeAwAGOC4yMS4wAA9MQVBUT1AtS0U3UEoyTkQAEWRvbWVzdGljLXBheW1lbnRz
+2025-07-12T16:17:26,151+0530 [4472 56] com.newrelic INFO: Agent 4472@LAPTOP-KE7PJ2ND/domestic-payments connected to collector.newrelic.com:443
+2025-07-12T16:17:26,151+0530 [4472 56] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6870170/applications/1208989214
+2025-07-12T16:17:26,155+0530 [4472 56] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-07-12T16:17:26,155+0530 [4472 56] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-07-12T16:17:26,155+0530 [4472 56] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-07-12T16:17:26,158+0530 [4472 56] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-07-12T16:17:26,158+0530 [4472 56] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-07-12T16:17:26,160+0530 [4472 56] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-07-12T16:17:28,790+0530 [4472 56] com.newrelic INFO: Real user monitoring is enabled for application domestic-payments. Auto instrumentation is enabled.
+2025-07-12T16:17:28,790+0530 [4472 56] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-07-13T11:26:34,758+0530 [22632 1] com.newrelic INFO: Writing to New Relic log file: D:\workspaces\intellij\internship\domestic-payments\newrelic\logs\newrelic_agent.log
+2025-07-13T11:26:34,759+0530 [22632 1] com.newrelic INFO: JRE vendor Oracle Corporation version 20.0.1
+2025-07-13T11:26:34,759+0530 [22632 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 20.0.1+9-29
+2025-07-13T11:26:34,759+0530 [22632 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2025-07-13T11:26:34,759+0530 [22632 1] com.newrelic INFO: Agent Host: LAPTOP-KE7PJ2ND IP: 192.168.1.4
+2025-07-13T11:26:34,759+0530 [22632 1] com.newrelic INFO: New Relic Agent v8.21.0 is initializing...
+2025-07-13T11:26:35,693+0530 [22632 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2025-07-13T11:26:37,101+0530 [22632 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2025-07-13T11:26:37,464+0530 [22632 1] com.newrelic INFO: Setting audit_mode to false
+2025-07-13T11:26:37,660+0530 [22632 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\workspaces\intellij\internship\domestic-payments\newrelic\.\newrelic.yml
+2025-07-13T11:26:37,668+0530 [22632 1] com.newrelic INFO: New Relic Agent v8.21.0 has started
+2025-07-13T11:26:37,668+0530 [22632 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@6979e8cb
+2025-07-13T11:26:37,669+0530 [22632 1] com.newrelic INFO: Premain startup complete in 4,219ms
+2025-07-13T11:26:37,671+0530 [22632 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2025-07-13T11:26:41,733+0530 [22632 69] com.newrelic INFO: Server Info: Apache Tomcat/10.1.42
+2025-07-13T11:26:52,708+0530 [22632 56] com.newrelic INFO: Host name is LAPTOP-KE7PJ2ND, display host LAPTOP-KE7PJ2ND for application domestic-payments
+2025-07-13T11:26:52,709+0530 [22632 56] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-07-13T11:26:54,732+0530 [22632 56] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2025-07-13T11:26:55,965+0530 [22632 56] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2025-07-13T11:26:55,965+0530 [22632 56] com.newrelic INFO: Agent run id: BVIBCPuroHnnAGjUmkgPugxoc0skAAIBAAAnIQEAAFhoAgRID7YeAwAGOC4yMS4wAA9MQVBUT1AtS0U3UEoyTkQAEWRvbWVzdGljLXBheW1lbnRz
+2025-07-13T11:26:55,965+0530 [22632 56] com.newrelic INFO: Agent 22632@LAPTOP-KE7PJ2ND/domestic-payments connected to collector.newrelic.com:443
+2025-07-13T11:26:55,966+0530 [22632 56] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/6870170/applications/1208989214
+2025-07-13T11:26:55,968+0530 [22632 56] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-07-13T11:26:55,968+0530 [22632 56] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-07-13T11:26:55,969+0530 [22632 56] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-07-13T11:26:55,973+0530 [22632 56] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2025-07-13T11:26:55,973+0530 [22632 56] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2025-07-13T11:26:55,973+0530 [22632 56] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2025-07-13T11:26:57,478+0530 [22632 56] com.newrelic INFO: Real user monitoring is enabled for application domestic-payments. Auto instrumentation is enabled.
+2025-07-13T11:26:57,478+0530 [22632 56] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2025-07-13T12:21:44,941+0530 [22632 30] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down

@@ -130,6 +130,8 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                             // Add claims to request attributes for controller access
                             request.setAttribute("jwt_claims", claims);
                             request.setAttribute("user_id", claims.get("username", String.class));
+                            request.setAttribute("user_role", role);
+                            request.setAttribute("customerId",subject);
                             request.setAttribute("email", claims.get("email", String.class));
                         }
                     }
