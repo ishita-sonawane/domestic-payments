@@ -1,0 +1,37 @@
+@startuml
+actor User
+participant Browser as Browser
+participant "Security Filter (JWTRequestFilter)" as Security
+participant "DomesticPaymentController" as Controller
+participant "DomesticPaymentService" as Service
+participant "DomesticPaymentRepository" as Repository
+participant "Identity Validation Utility" as IVU
+database "Database" as DB
+
+User -> Browser : Initiates payment request
+Browser -> Security : HTTP Request (/domestic-payment)
+Security -> IVU : Validate JWT Token
+IVU --> Security : Token valid/invalid
+alt Token valid
+  Security -> Security : Extract user details from token and set in request
+else Token invalid
+  Security --> Browser : HTTP Error Response (e.g., 401 Unauthorized)
+Security -> Controller : Passes authenticated request
+
+Controller -> Controller : Validate business rules
+Controller -> Service : initiatePayment(requestData)
+Service --> Controller : Acknowledge request received
+
+Service -> Repository : savePayment(data)
+Repository -> DB : INSERT payment record
+DB --> Repository : Success/Failure
+Repository --> Service : Payment status
+Service --> Controller : Response DTO / Error
+
+alt Failure case
+  Controller --> Browser : HTTP Error Response (e.g., 400, 500)
+else Success
+  Controller --> Browser : HTTP Response (e.g., 200 OK)
+end
+
+@enduml

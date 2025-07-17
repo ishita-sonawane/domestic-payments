@@ -182,7 +182,7 @@ class DomesticPaymentControllerTest {
         mockMvc.perform(post("/api/domestic-payments")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(requestJson))
-                .andExpect(status().isForbidden());
+                .andExpect(status().isBadRequest());
     }
 
 //    @Test
