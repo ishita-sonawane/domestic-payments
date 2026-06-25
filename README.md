@@ -1,4 +1,4 @@
-Domestic Payments API
+Domestic Payments API- 
 A production-grade REST API for secure domestic fund transfers, built during my internship at Hexaware Technologies Ltd (Jun–Jul 2025). The system handles the full payment lifecycle- authentication, validation, persistence, and observability, following a clean layered architecture with enterprise-grade security standards.
 
 Tech Stack:
@@ -31,7 +31,7 @@ GlobalExceptionHandler    ← RFC-compliant structured error responses
 
 Key Features:
 
-Security
+Security:
 - JWT with RSA asymmetric encryption (RS256)- tokens signed with a private key and verified via public key through an AWS-hosted validation endpoint
 - Role-Based Access Control (RBAC)- roles extracted from JWT claims and injected into Spring Security context via SecurityContextHolder
 - OWASP Top 10 compliance across all layers:
@@ -41,19 +41,19 @@ Security
   - Security Misconfiguration- CSRF disabled for stateless mode; CORS explicitly scoped to React origin; no default session creation
   - Security Logging & Monitoring- New Relic APM + SLF4J logging on all key flow transitions
 
-Payment API
+Payment API:
 - POST /api/domestic-payments- initiate a domestic fund transfer
 - Request validation: beneficiary ID format, payment amount constraints (max ₹10,000), account number rules
 - Payment status lifecycle: PENDING → SUCCESS / FAILURE
 - Structured DomesticPaymentRequest DTO → DomesticPayment JPA entity mapping
 - RFC-compliant ApiError response model for all failure cases
 
-Database
+Database:
 - MySQL hosted on AWS RDS 
 - Schema enforces precision-based field constraints and regex validation at the DB level
 - domestic_payments table with strict relational integrity
 
-Observability & Quality
+Observability & Quality:
 - New Relic- APM metrics, distributed tracing, latency monitoring, real-time error visibility
 - SonarQube- static analysis for code smells, duplications, and security vulnerabilities; zero critical defects in production
 - JUnit 5- unit and integration tests covering edge cases, invalid inputs, and authentication failure scenarios using real JWTs and mocked payloads
