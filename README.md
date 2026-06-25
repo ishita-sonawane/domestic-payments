@@ -2,15 +2,15 @@ Domestic Payments API-
 A production-grade REST API for secure domestic fund transfers, built during my internship at Hexaware Technologies Ltd (Jun–Jul 2025). The system handles the full payment lifecycle- authentication, validation, persistence, and observability, following a clean layered architecture with enterprise-grade security standards.
 
 Tech Stack:
-Language- Java 17
-Framework- Spring Boot 3.5.3
-Security- JWT + RSA (RS256), Spring Security 
-Database- MySQL (AWS RDS) 
-ORM- Spring Data JPA / Hibernate 
-Testing- JUnit 5, Spring Boot Test 
-Code Quality- SonarQube 
-Observability- New Relic (APM) 
-Frontend- React 
+Language- Java 17,
+Framework- Spring Boot 3.5.3,
+Security- JWT + RSA (RS256), Spring Security, 
+Database- MySQL (AWS RDS) ,
+ORM- Spring Data JPA / Hibernate ,
+Testing- JUnit 5, Spring Boot Test ,
+Code Quality- SonarQube ,
+Observability- New Relic (APM) ,
+Frontend- React ,
 Build- Maven 
 
 Architecture Overview:
